@@ -1,0 +1,9 @@
+.high{
+    background-color: rgb(238, 95, 95);
+}
+.moderate{
+    background-color: rgb(210, 250, 211);
+}
+.low{
+    background-color: yellow;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="Container TodoApp">
+      <!----------------------------------------------------------selectFilter----------------------------------------------->
+      <div class="Section filter_cont">
+        <button class="btn" data-filter="all">All</button>
+        <button class="btn" data-filter="high">High</button>
+        <button class="btn" data-filter="moderate">Moderate</button>
+        <button class="btn" data-filter="low">Low</button>
+      </div>
+      <div class="section">
+        <form class="form">
+          <!-------------------------------------------------------- inputField------------------------------------------------------->
+          <input type="text" name="" id="input" class="input" placeholder="add task.......">
+
+          <!--------------------------------------------------------options------------------------------------------------------------>
+          <select name="" id="select">
+            <option value="high">high</option>
+            <option value="moderate">Moderate</option>
+            <option value="low">Low</option>
+          </select>
+          <button class="add_btn">Add</button>
+        </form>
+      </div>
+      <!------------------------------------------------------- section to show tasks-------------------------------------------------------->
+      <div class="section">
+        <ul class="todo_list">
+          <div class="${task.priority}"><span>${task.text}</span><button class="delete">delete</button><button class="edit">Edit</button></div>
+        </ul>
+       
+        <div class="alert">
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
